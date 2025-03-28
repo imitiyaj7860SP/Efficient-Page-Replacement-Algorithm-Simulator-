@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Replacement Algorithm Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Page Replacement Algorithm Simulator</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Input</h2>
+            <label for="reference-string">Reference String (comma-separated):</label>
+            <input type="text" id="reference-string" placeholder="e.g., 7, 0, 1, 2, 0, 3, 0, 4">
+            <label for="frame-size">Frame Size:</label>
+            <input type="number" id="frame-size" min="1" placeholder="e.g., 3">
+            <label for="algorithm">Select Algorithm:</label>
+            <select id="algorithm">
+                <option value="FIFO">FIFO</option>
+                <option value="LRU">LRU</option>
+                <option value="MRU">MRU</option>
+                <option value="OPR">OPR</option>
+            </select>
+            <button id="simulate-btn">Simulate</button>
+        </section>
+        <section id="output-section">
+            <h2>Output</h2>
+            <div id="results"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
